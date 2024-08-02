@@ -1,0 +1,689 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1920px;
+  min-height: 373px;
+  padding: 20px;
+  font-size: 1rem;
+  background-color: #d7d7d7;
+}
+
+/* section one part one*/
+.section1 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d7d7d7;
+  background-image: url(../images/Rectangle\ 67.png);
+  background-repeat: no-repeat;
+  background-size: 60vw 100%;
+  background-position: right;
+  border-top: 5px solid black;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-top: 72px;
+}
+
+/*section one for logo and links */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+/* to hide the menu icon on the desktop */
+
+nav .links-two {
+  display: none;
+}
+
+.mobilepara {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .section1 .links {
+    display: none;
+  }
+
+  nav .links-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5vw;
+  }
+  .section1 {
+    background-color: unset;
+    background-image: url(../images/backgroundimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: unset;
+  }
+
+  .section1 nav {
+    background-color: black;
+    margin-top: unset;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 19px;
+  }
+  .section1 .logo {
+    display: none;
+  }
+  .section1 .upper {
+    display: none;
+  }
+
+  .mobilepara {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 30%;
+  }
+  .mobilepara .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    margin-top: 30px;
+  }
+
+  .mobilepara p {
+    font-family: "Advent Pro";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29.9px;
+  }
+  .mobilepara h3 {
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.01px;
+  }
+}
+
+a {
+  font-family: "Montserrat", open sans;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.72px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 100px;
+  height: 46px;
+}
+
+/* #About-me {
+  border: 8px solid none;
+  padding: 20px;
+  text-align: center;
+  width: 147px;
+  height: 46px;
+}
+#skills {
+  border: 8px solid none;
+  padding: 20px;
+  text-align: center;
+  width: 147px;
+  height: 46px;
+}
+#port {
+  border: 8px solid none;
+  padding: 20px;
+  text-align: center;
+  width: 147px;
+  height: 46px;
+} */
+#contact-me {
+  border: 4px solid white;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  width: 150px;
+}
+
+/* section one part two */
+.upper .self {
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+  /* width: 20vw; */
+  width: 600px;
+  height: 400px;
+}
+
+.self h6 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46.96px;
+  margin-top: 170px;
+}
+
+.self h2 {
+  font-family: "Raleway" sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 93.92px;
+  width: 300px;
+  text-wrap: nowrap;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .self h2 {
+    /* text-wrap: wrap; */
+    width: 20px;
+    font-size: 40px;
+  }
+}
+
+.self p {
+  font-family: "Raleway" sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 29.35px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .self p {
+    font-size: 20px;
+    /* text-wrap: wrap; */
+    /* width: 10px; */
+    line-height: 15px;
+  }
+}
+.self .icons {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .self .icons {
+    gap: 4px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .photo {
+    max-width: 300px;
+  }
+}
+
+.photo img {
+  width: 700px;
+  margin-left: 550px;
+  margin-top: -22rem;
+}
+
+.photo p {
+  color: white;
+  font-family: "Roboto", open sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: justified;
+  width: 150px;
+  height: 80px;
+  margin-left: 800px;
+}
+
+/* section two (berries) */
+.BERRIES {
+  padding: 20px;
+  color: white;
+  padding-left: 40px;
+  background: url(../images/IT.svg) top right, url(../images/color.svg);
+  background-repeat: no-repeat, repeat;
+}
+
+/* section two for about me */
+.ME {
+  border: 8px solid black;
+  width: 300px;
+  margin-top: 90px;
+  /* margin-left: 650px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.para {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#berry {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 15px;
+  padding: 8px;
+}
+
+#about {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding: 25px;
+  text-align: center;
+}
+
+#read {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  padding: 8px;
+}
+
+#explore {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#p1 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 8px;
+}
+#p2 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#image {
+  margin-bottom: 20px;
+}
+
+/* section three for design, development and maintenance  */
+
+.first {
+  width: 100%;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .first {
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: auto; */
+  }
+}
+
+/* section three box one */
+.first .design {
+  display: flex;
+  flex-wrap: nowrap;
+  /* width: 900px; */
+  height: 200px;
+  justify-content: space-between;
+  padding: 170px;
+  margin-bottom: 50px;
+  /* gap: 80px;
+  margin-left: 200px; */
+}
+
+@media screen and (max-width: 1000px) {
+  .first .design {
+    display: block;
+    padding: unset;
+    flex-wrap: wrap;
+    padding: auto;
+    float: none;
+    clear: both;
+  }
+}
+
+/* section three box two */
+.first .div3 {
+  width: 500px;
+  text-align: center;
+  height: 200px;
+  margin-left: 500px;
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 1000px) {
+  .first .div3 {
+    margin: unset;
+  }
+}
+.first h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 26.82px;
+  letter-spacing: 0.1854em;
+  float: left;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .first h6 {
+    margin: unset;
+    clear: both;
+  }
+}
+
+.first p {
+  font-family: "Open sans", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 19.07px;
+  text-align: justified;
+  float: left;
+  margin-top: 15px;
+  margin-left: 40px;
+  font-optical-sizing: auto;
+  width: 480px;
+  height: 100px;
+}
+
+.first div img {
+  float: left;
+}
+
+.lines {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.skill {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding: 25px;
+  text-align: center;
+  border: 8px solid black;
+  width: 300px;
+  margin-top: 50px;
+  margin: auto;
+}
+
+/* section four (the tools) */
+
+.second {
+  width: 100%;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.second .use {
+  display: inline-block;
+  width: 20%;
+
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+  .second .use {
+    display: block;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* width: 300px;
+    height: 200px; */
+  }
+}
+
+.second h5 {
+  font-family: "Montserrat", Open sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.57px;
+  letter-spacing: 0.1854em;
+  text-align: start;
+  margin-left: 240px;
+}
+
+@media screen and (max-width: 800px) {
+  .second h5 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.second .use p {
+  font-family: "Montserrat", Open sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.26px;
+  letter-spacing: 0.1354em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* section five parent container */
+.otherImages {
+  max-width: 1920px;
+}
+
+#img1 {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  background-image: url(../images/img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#img1 h5 {
+  font-family: "Montserrat", open sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38.37px;
+  letter-spacing: 0.4354em;
+  text-align: center;
+  border: 8px solid black;
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* section five (all, coded and designed) */
+.nav {
+  width: 100%;
+  height: 90px;
+  border: 4px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .box {
+  width: 200px;
+  height: 200px;
+}
+
+/* #img3 .text {
+  text-align: center;
+} */
+
+/* section five box 2 */
+/* .others {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 100px;
+  width: 100%;
+} */
+
+/* section six (contact div) */
+.info {
+  max-width: 1560;
+  text-align: center;
+  border-top: 72px;
+  background-color: #d7d7d7;
+}
+
+.contact {
+  width: 300px;
+  border: 8px solid black;
+  text-align: center;
+  margin: auto;
+  margin-top: 70px;
+}
+h3 {
+  padding: 25px;
+  font-family: "Montserrat" open sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38.37px;
+  letter-spacing: 0.3554em;
+  text-align: center;
+}
+
+.info p {
+  width: 700px;
+  height: 100px;
+  margin: auto;
+  padding-top: 70px;
+  font-optical-sizing: auto;
+}
+
+#seperator {
+  margin-top: 50px;
+}
+
+/* section six (form) */
+form {
+  width: 100%;
+  margin-top: 100px;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+input[type="text"],
+select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-style: normal;
+}
+input[type="number"],
+select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid black;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 20%;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+#message {
+  height: 20vh;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
+}
+
+#footer-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer h6 {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.29px;
+  letter-spacing: 0.1854em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.55px;
+  margin-top: 40px;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
